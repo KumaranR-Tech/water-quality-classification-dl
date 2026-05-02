@@ -17,6 +17,18 @@ The model is designed for real-world IoT applications where water quality monito
 
 ---
 
+## Project Structure
+water-quality-classification-dl/
+│
+├── water_quality_classification.ipynb
+├── water_quality.csv
+├── requirements.txt
+├── accuracy_plot.png
+├── confusion_matrix.png
+└── README.md
+
+---
+
 ## Machine Learning Pipeline
 1. Data Preprocessing
 2. Label Encoding
