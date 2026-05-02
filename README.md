@@ -43,6 +43,13 @@ The model is designed for real-world IoT applications where water quality monito
 - Minimal overfitting due to BatchNorm & Dropout
 
 ---
+## Model Performance
+
+### Accuracy Curve
+![Accuracy Graph](accuracy_plot.png)
+
+### Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
 
 ## Sample Prediction
 Input:
