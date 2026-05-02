@@ -21,7 +21,7 @@ The model is designed for real-world IoT applications where water quality monito
 water-quality-classification-dl/
 │
 ├── water_quality_classification.ipynb
-├── water_quality.csv
+├── Water Quality.csv
 ├── requirements.txt
 ├── accuracy_plot.png
 ├── confusion_matrix.png
