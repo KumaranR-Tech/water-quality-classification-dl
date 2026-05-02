@@ -1,38 +1,72 @@
 # Water Quality Classification using Deep Learning
 
-## Overview
-Developed a deep learning model to classify water types (Tap, Soap, Drain) using sensor-based parameters such as Electrical Conductivity (EC), pH, and Total Dissolved Solids (TDS).
+## Project Overview
+This project presents a deep learning-based classification system that identifies water quality types (Tap Water, Soap Water, Drain Water) using sensor-based parameters.
+
+The model is designed for real-world IoT applications where water quality monitoring is essential.
+
+---
 
 ## Dataset
-- Total samples: 10,800
+- Total Samples: 10,800
 - Features:
-  - EC value (ms/cm)
-  - pH value
-  - TDS value (ppm)
-- Classes: 3 (Tap Water, Soap Water, Drain Water)
+  - Electrical Conductivity (EC)
+  - pH Value
+  - Total Dissolved Solids (TDS)
+- Classes: 3 (Tap, Soap, Drain)
+
+---
+
+## Machine Learning Pipeline
+1. Data Preprocessing
+2. Label Encoding
+3. Feature Scaling
+4. Train-Test Split
+5. Model Training
+6. Evaluation & Visualization
+
+---
 
 ## Model Architecture
-- Dense Neural Network
-- Dense (64) + ReLU
+- Dense (64, ReLU)
 - Batch Normalization
 - Dropout (0.3)
-- Dense (32) + ReLU
+- Dense (32, ReLU)
 - Dropout (0.3)
 - Output Layer (Softmax)
 
-## Technologies Used
+---
+
+## Results
+- Test Accuracy: **99.5%**
+- Strong generalization across all classes
+- Minimal overfitting due to BatchNorm & Dropout
+
+---
+
+## Sample Prediction
+Input:
+[EC = 400, pH = 7.2, TDS = 120]
+
+Output:
+Predicted Water Type: Drain Water
+
+---
+
+## Tech Stack
 - Python
 - TensorFlow / Keras
 - Scikit-learn
-- NumPy, Pandas
+- NumPy, Pandas, Matplotlib, Seaborn
 
-## Performance
-- Accuracy: 99.5%
-- Strong generalization using BatchNorm & Dropout
+---
 
-## Features
-- End-to-end ML pipeline
-- Real-time prediction capability for IoT systems
+## Future Improvements
+- Deploy as web app (Streamlit)
+- Integrate with IoT sensors
+- Real-time monitoring dashboard
+
+---
 
 ## Author
 Kumaran R
